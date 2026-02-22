@@ -1,0 +1,28 @@
+# Gunakan Node versi 20 berbasis Alpine Linux (ukurannya sangat kecil dan ringan)
+# Kita pakai Node karena ekosistem React (Vite) butuh Node.js untuk berjalan
+FROM node:20-alpine
+
+# Tentukan folder kerja di dalam container bernama /app
+# Semua file project kita nantinya akan ditaruh di dalam folder ini
+WORKDIR /app
+
+# Copy file package.json dan package-lock.json (jika ada) ke dalam container
+# Tanda asterisk (*) memastikan kedua file tersebut ikut tercopy
+# Kita copy file ini duluan agar Docker bisa "mengingat" daftar belanjaan kita
+COPY package*.json ./
+
+# Jalankan perintah instalasi dependency di dalam container
+# Ini akan membaca package.json dan menginstall React, Vite, Tailwind, dll di dalam mesin Linux
+RUN npm install
+
+# Copy semua sisa file project dari laptop (Windows) ke dalam container (Linux)
+# Karena kita punya .dockerignore, folder node_modules dari Windows TIDAK akan ikut tercopy!
+COPY . .
+
+# Beri tahu Docker bahwa aplikasi Vite ini akan berjalan di port 5173
+# Ini hanya sebagai dokumentasi/informasi, belum benar-benar membuka port ke laptopmu
+EXPOSE 5173
+
+# Perintah utama yang akan dieksekusi saat container pertama kali menyala
+# Kita tambahkan "-- --host" agar server Vite bisa diakses dari luar container (lewat browser Windows-mu)
+CMD ["npm", "run", "dev", "--", "--host"]

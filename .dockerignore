@@ -1,0 +1,17 @@
+# Abaikan folder node_modules dari Windows agar tidak bentrok dengan mesin Linux di Docker
+node_modules/
+
+# Abaikan folder hasil build karena kita akan mem-build ulang di dalam Docker
+dist/
+
+# Abaikan file environment lokal yang berisi kunci rahasia
+.env
+
+# Abaikan folder riwayat Git
+.git/
+
+# Abaikan file Docker itu sendiri agar tidak ikut tercopy ke dalam container
+Dockerfile
+Dockerfile.dev
+docker-compose.yml
+docker-compose.dev.yml

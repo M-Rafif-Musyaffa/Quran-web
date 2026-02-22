@@ -1,0 +1,30 @@
+# Menentukan versi aturan penulisan Docker Compose (versi 3.8 sangat stabil)
+version: '3.8'
+
+# Daftar layanan (container/dapur) apa saja yang mau kita jalankan
+services:
+  # Nama layanan kita adalah 'frontend' (kamu bisa bebas memberi nama apa saja)
+  frontend:
+    # Instruksi untuk membangun Image dari Dockerfile kita
+    build:
+      # Cari file resepnya di folder saat ini (titik .)
+      context: .
+      # Beri tahu nama spesifik file resepnya (karena kita pakai nama .dev, bukan nama standar)
+      dockerfile: Dockerfile.dev
+    # Sambungkan port 5173 di laptop Windows (kiri) ke port 5173 di dalam container (kanan)
+    # Vite secara default menggunakan port 5173
+    ports:
+      - "5173:5173"
+    # Konfigurasi Volumes (Pipa Ajaib) untuk mengaktifkan fitur Hot Reload
+    volumes:
+      # Pipa 1: Sambungkan folder project di Windows (./) ke folder /app di container
+      # Ini yang membuat perubahan file di VS Code langsung mengalir ke dalam container!
+      - ./:/app
+      # Pipa 2 (Trick Docker): Lindungi folder node_modules di dalam container agar tidak tertimpa oleh Windows
+      # Ini mencegah bentrok jika terlanjur ada node_modules di laptop Windows-mu
+      - /app/node_modules
+    # Setel variabel lingkungan (environment variables)
+    environment:
+      # Beri tahu Vite agar menggunakan mekanisme "polling" (mengecek berkala) untuk mendeteksi perubahan file
+      # Ini SANGAT PENTING untuk pengguna Windows dengan sistem WSL 2 agar Hot Reload bekerja lancar tanpa bug
+      - CHOKIDAR_USEPOLLING=true
