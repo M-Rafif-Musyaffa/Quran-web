@@ -1,10 +1,39 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import JadwalSholat from '../components/JadwalSholat';
 import useQuranStore from '../store/useQuranStore';
 import RandomDoa from '../components/RandomDoa';
 
 export default function Home() {
-  const { bookmark, moodHariIni, setMoodHariIni } = useQuranStore();
+  const { bookmark, moodHariIni, setMoodHariIni, catatanKalender } = useQuranStore();
+  const [notifAgenda, setNotifAgenda] = useState(null);
+
+  // 🔔 LOGIKA PENDETEKSI TANGGAL YANG DIPERBAIKI
+  useEffect(() => {
+    const dateObj = new Date();
+    // Memastikan formatnya selalu 2 digit (misal: 05-02-2026, bukan 5-2-2026)
+    const dd = String(dateObj.getDate()).padStart(2, '0');
+    const mm = String(dateObj.getMonth() + 1).padStart(2, '0');
+    const yyyy = dateObj.getFullYear();
+    const tglHariIni = `${dd}-${mm}-${yyyy}`;
+
+    // Cek apakah ada jadwal hari ini di brankas
+    const agendaHariIni = catatanKalender[tglHariIni];
+    
+    // Fitur Anti-Spam (Dimatikan dulu agar gampang dites)
+    // const sudahDinotif = sessionStorage.getItem('notifAgendaHariIni');
+
+    if (agendaHariIni) {
+      setNotifAgenda(agendaHariIni);
+    }
+  }, [catatanKalender]);
+
+  const tanganiNotif = (aktifkanComfortMode) => {
+    if (aktifkanComfortMode && notifAgenda.tipe === 'haid') {
+      setMoodHariIni('haid');
+    }
+    setNotifAgenda(null);
+  };
 
   const jam = new Date().getHours();
   let sapaan = 'Selamat Pagi 🌸';
@@ -30,9 +59,61 @@ export default function Home() {
   }
 
   return (
-    <div className="max-w-5xl mx-auto">
-      
-      {/* 🌸 HEADER SAPAAN MANIS & MOOD TRACKER */}
+    <div className="max-w-5xl mx-auto relative">
+
+      {/* ========================================================= */}
+      {/* 🔔 POP-UP NOTIFIKASI KALENDER                           */}
+      {/* ========================================================= */}
+      {notifAgenda && (
+        <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[100] flex items-center justify-center p-4 animate-fade-in">
+          <div className="bg-white dark:bg-slate-800 rounded-[2rem] p-8 max-w-sm w-full text-center shadow-2xl border border-slate-100 dark:border-slate-700 transform scale-100 transition-all">
+            
+            <div className="text-6xl mb-4 animate-bounce" style={{ animationDuration: '3s' }}>
+              {notifAgenda.tipe === 'haid' ? '🩸' : notifAgenda.tipe === 'puasa' ? '🌙' : '📝'}
+            </div>
+            
+            <h3 className="text-2xl font-bold text-slate-800 dark:text-white mb-2 tracking-tight">
+              Pengingat Hari Ini!
+            </h3>
+            
+            <p className="text-slate-600 dark:text-slate-300 mb-4 font-medium">
+              {notifAgenda.tipe === 'haid' ? 'Hari ini adalah jadwal siklus haidmu.' 
+              : notifAgenda.tipe === 'puasa' ? 'Hari ini kamu punya jadwal puasa sunnah.' 
+              : 'Kamu punya catatan khusus untuk hari ini:'}
+            </p>
+            
+            {notifAgenda.teks && (
+              <div className="bg-emerald-50 dark:bg-slate-700/50 p-4 rounded-2xl mb-6 border border-emerald-100 dark:border-slate-600">
+                <span className="font-bold text-emerald-700 dark:text-emerald-400">"{notifAgenda.teks}"</span>
+              </div>
+            )}
+
+            <div className="flex flex-col gap-3 mt-2">
+              {notifAgenda.tipe === 'haid' && (
+                <button 
+                  onClick={() => tanganiNotif(true)}
+                  className="w-full bg-rose-500 text-white font-bold py-3.5 rounded-xl hover:bg-rose-600 shadow-md transition-all active:scale-95 flex justify-center items-center gap-2"
+                >
+                  <span>🌸</span> Aktifkan Comfort Mode
+                </button>
+              )}
+              
+              <button 
+                onClick={() => tanganiNotif(false)}
+                className={`w-full font-bold py-3.5 rounded-xl shadow-sm transition-all active:scale-95 ${
+                  notifAgenda.tipe === 'haid' 
+                  ? 'bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-slate-700 dark:text-slate-300' 
+                  : 'bg-emerald-600 text-white hover:bg-emerald-700 shadow-emerald-500/30 shadow-md'
+                }`}
+              >
+                {notifAgenda.tipe === 'haid' ? 'Tutup Saja' : 'Baik, Terima Kasih! ✨'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 🌸 HEADER SAPAAN MANIS */}
       <div className={`text-white rounded-3xl p-8 md:p-10 mb-8 shadow-lg bg-gradient-to-br ${bgWarna} dark:from-slate-800 dark:to-slate-900 border dark:border-slate-700 relative overflow-hidden transition-colors duration-1000`}>
         <div className="absolute top-2 right-6 opacity-20 text-7xl select-none animate-pulse">☁️</div>
         <div className="absolute bottom-2 right-32 opacity-10 text-5xl select-none">✨</div>
@@ -64,8 +145,6 @@ export default function Home() {
       <RandomDoa />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-        
-        {/* 🔖 KOTAK 1: Banner Terakhir Dibaca */}
         {bookmark ? (
           <div className="bg-emerald-50 dark:bg-slate-800/80 border border-emerald-200 dark:border-slate-700 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition group h-full">
             <div className="flex items-start gap-4 mb-6">
@@ -87,7 +166,6 @@ export default function Home() {
           </div>
         )}
 
-        {/* 📖 KOTAK 2: Pintasan ke Daftar Surah */}
         <div className="bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:shadow-emerald-500/10 hover:border-emerald-300 dark:hover:border-emerald-600 transition group h-full">
           <div className="flex items-start gap-4 mb-6">
             <div className="w-14 h-14 bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform shrink-0">✨</div>
@@ -101,9 +179,7 @@ export default function Home() {
             Buka Daftar Surah &rarr;
           </Link>
         </div>
-
       </div>
-
     </div>
   );
 }

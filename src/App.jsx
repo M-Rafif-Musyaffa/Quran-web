@@ -11,6 +11,7 @@ import Kamus from './pages/Kamus';
 import AsmaulHusna from './pages/AsmaulHusna';
 import Pengaturan from './pages/Pengaturan';
 import Quran from './pages/Quran';
+import Tajwid from './pages/Tajwid';
 
 function App() {
   return (
@@ -29,8 +30,9 @@ function App() {
           <Route path="asmaul-husna" element={<AsmaulHusna />} />
           <Route path="pengaturan" element={<Pengaturan />} />
           <Route path="/" element={<Home />} />
-          <Route path="/quran" element={<Quran />} />  {/* INI BARU */}
+          <Route path="/quran" element={<Quran />} />
           <Route path="/surah/:id" element={<SurahDetail />} />
+          <Route path="/tajwid" element={<Tajwid />} />
 
         </Route>
       </Routes>
