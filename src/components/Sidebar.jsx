@@ -9,6 +9,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
   const menuItems = [
     { path: '/', name: 'Beranda', icon: '🏡' },
     { path: '/quran', name: 'Al-Quran', icon: '📖' },
+    { path: '/khatam', name: 'Perencana Khatam', icon: '🎯' },
     { path: '/tajwid', name: 'Belajar Tajwid', icon: '📚' },
     { path: '/doa', name: 'Doa & Dzikir', icon: '🤲' },
     { path: '/tasbih', name: 'Tasbih Digital', icon: '📿' },

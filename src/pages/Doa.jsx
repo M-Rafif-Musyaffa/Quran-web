@@ -19,9 +19,39 @@ export default function Doa() {
     staleTime: Infinity, 
   });
 
+  // 🧠 KAMUS PINTAR LOKAL (Mapping Kata Kunci Rahasia)
+  const kamusPintar = [
+    { kunciJudul: "tidur", tags: ["insomnia", "ngantuk", "susah tidur", "bobo", "malam", "mimpi"] },
+    { kunciJudul: "makan", tags: ["laper", "kenyang", "lapar", "haus", "buka puasa", "sahur"] },
+    { kunciJudul: "keselamatan", tags: ["musibah", "celaka", "bahaya", "perjalanan", "mudik", "takut"] },
+    { kunciJudul: "kebaikan", tags: ["sukses", "bahagia", "kaya", "lulus", "skripsi", "kerja", "galau", "rezeki"] },
+    { kunciJudul: "orang tua", tags: ["ibu", "ayah", "bapak", "mama", "papa", "keluarga", "sakit"] }
+  ];
+
+  // 🔍 MESIN PENCARIAN CERDAS
   const doaTersaring = doadoa?.filter((doa) => {
-    const judul = doa.nama || doa.judul || "";
-    return judul.toLowerCase().includes(kataKunci.toLowerCase());
+    if (!kataKunci) return true; // Tampilkan semua jika kotak pencarian kosong
+
+    const pencarian = kataKunci.toLowerCase();
+    const judul = (doa.nama || doa.judul || "").toLowerCase();
+    const arti = (doa.arti || doa.artinya || "").toLowerCase();
+
+    // 1. Pencarian Standar (Mencari di Judul atau Arti doa)
+    const cocokStandar = judul.includes(pencarian) || arti.includes(pencarian);
+
+    // 2. Pencarian Pintar (Mencari di Kamus Tersembunyi)
+    let cocokPintar = false;
+    kamusPintar.forEach(kamus => {
+      // Jika kata yang diketik ada di dalam array tags...
+      if (kamus.tags.some(tag => tag.includes(pencarian))) {
+        // ...cek apakah doa ini adalah doa yang dimaksud
+        if (judul.includes(kamus.kunciJudul)) {
+          cocokPintar = true;
+        }
+      }
+    });
+
+    return cocokStandar || cocokPintar;
   });
 
   return (
@@ -66,11 +96,11 @@ export default function Doa() {
       {/* ========================================= */}
       {tabAktif === 'doa' && (
         <div className="animate-fade-in">
-          {/* Kotak Pencarian Khusus Doa */}
+          {/* Kotak Pencarian Pintar */}
           <div className="relative w-full max-w-xl mx-auto mb-10">
             <input
               type="text"
-              placeholder="Cari doa (misal: tidur, makan, belajar)..."
+              placeholder="Apa yang sedang kamu rasakan? (misal: galau, skripsi, tidur)..."
               value={kataKunci}
               onChange={(e) => setKataKunci(e.target.value)}
               className="w-full pl-12 pr-4 py-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 dark:text-white transition shadow-sm text-lg"
@@ -95,15 +125,16 @@ export default function Doa() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {doaTersaring.length === 0 ? (
                 <div className="col-span-full text-center text-slate-500 py-10 bg-white dark:bg-slate-800 rounded-2xl border border-dashed border-slate-300 dark:border-slate-700">
-                  Doa dengan kata kunci "{kataKunci}" tidak ditemukan.
+                  <div className="text-5xl mb-3 grayscale opacity-60">🧐</div>
+                  Doa untuk "{kataKunci}" tidak ditemukan. Coba gunakan kata lain.
                 </div>
               ) : (
                 doaTersaring.map((doa, index) => {
                   const judulDoa = doa.nama || doa.judul || `Doa ${index + 1}`;
                   return (
                     <Link 
-                      to={`/doa/${index}`} 
-                      key={index}
+                      to={`/doa/${doa.id || index}`} 
+                      key={doa.id || index}
                       className="bg-white dark:bg-slate-800 rounded-2xl p-5 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-emerald-500/20 hover:border-emerald-400 dark:hover:border-emerald-500 transition-all duration-300 flex items-center gap-4 group hover:-translate-y-1 relative overflow-hidden"
                     >
                       {/* Garis Hijau Animasi */}

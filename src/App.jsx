@@ -12,6 +12,7 @@ import AsmaulHusna from './pages/AsmaulHusna';
 import Pengaturan from './pages/Pengaturan';
 import Quran from './pages/Quran';
 import Tajwid from './pages/Tajwid';
+import Khatam from './pages/Khatam';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/quran" element={<Quran />} />
           <Route path="/surah/:id" element={<SurahDetail />} />
           <Route path="/tajwid" element={<Tajwid />} />
+          <Route path="/khatam" element={<Khatam />} />
 
         </Route>
       </Routes>
