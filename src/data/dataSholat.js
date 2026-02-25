@@ -94,98 +94,97 @@ export const dataSholat = [
   {
     id: 1,
     judul: "1. Berdiri Bagi yang Mampu & Niat",
-    deskripsi: "Berdiri tegak menghadap kiblat. Berniat di dalam hati sesuai dengan sholat yang akan dikerjakan. (Lihat niat sesuai sholat di atas)"
+    deskripsi: "Berdiri tegak menghadap kiblat. Berniat di dalam hati sesuai dengan sholat yang akan dikerjakan. Dalam mazhab Syafi'i (NU), melafazkan niat hukumnya sunnah untuk membantu hati agar lebih fokus. (Lihat niat sesuai sholat)"
   },
   {
     id: 2,
     judul: "2. Takbiratul Ihram",
-    arab: "اللّٰهُ أَكْبَر",
-    latin: "Allahu Akbar",
+    arab: "اللّٰهُ أَكْبَرُ",
+    latin: "Allaahu Akbar",
     arti: "Allah Maha Besar",
-    deskripsi: "Mengangkat kedua tangan sejajar dengan telinga/bahu sambil mengucapkan Takbir."
+    deskripsi: "Mengangkat kedua tangan sejajar telinga (ujung jari sejajar ujung telinga, ibu jari sejajar cuping telinga) sambil mengucapkan Takbir. Telapak tangan menghadap kiblat, jari-jari tidak dirapatkan dan tidak direnggangkan."
   },
   {
     id: 3,
     judul: "3. Doa Iftitah",
-    arab: "اللهُ أَكْبَرُ كَبِيرًا وَالحَمْدُ لِلَّهِ كَثِيرًا وَسُبحَانَ اللهِ بُكرَةً وَأَصِيلًا، إِنِّي وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَاوَاتِ وَالأَرْضَ حَنِيفًا مُسْلِمًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ",
-    latin: "Allaahu akbaru kabiiran walhamdu lillaahi katsiiran wa subhaanallaahi bukratan wa ashiilaa. Innii wajjahtu wajhiya lilladzii fatharas samaawaati wal ardha haniifam muslimaw wa maa ana minal musyrikiin.",
-    arti: "Allah Maha Besar dengan sebesar-besarnya, segala puji bagi Allah dengan pujian yang banyak, dan Maha Suci Allah di waktu pagi dan petang. Sesungguhnya aku menghadapkan wajahku kepada Dzat yang menciptakan langit dan bumi dengan lurus dan berserah diri, dan aku bukan termasuk orang-orang yang menyekutukan Allah.",
-    deskripsi: "Dibaca setelah Takbiratul Ihram sebelum membaca Al-Fatihah. Hukumnya sunnah."
+    arab: "وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيفًا مُسْلِمًا وَمَا أَنَا مِنَ الْمُشْرِكِيْنَ، إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلّٰهِ رَبِّ الْعَالَمِيْنَ، لَا شَرِيْكَ لَهُ وَبِذٰلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِيْنَ",
+    latin: "Wajjahtu wajhiya lilladzii fatharas samaawaati wal ardha haniifam muslimaw wa maa ana minal musyrikiin. Inna shalaatii wa nusukii wa mahyaaya wa mamaatii lillaahi rabbil 'aalamiin. Laa syariika lahu wa bidzaalika umirtu wa ana minal muslimiin.",
+    arti: "Aku hadapkan wajahku kepada Dzat yang menciptakan langit dan bumi dengan lurus lagi berserah diri, dan aku bukan termasuk orang-orang musyrik. Sesungguhnya sholatku, ibadahku, hidupku, dan matiku hanyalah untuk Allah Tuhan semesta alam. Tiada sekutu bagi-Nya, dan demikianlah aku diperintahkan, dan aku termasuk orang-orang muslim.",
+    deskripsi: "Dibaca setelah Takbiratul Ihram sebelum Al-Fatihah. Hukumnya sunnah ab'adh."
   },
   {
     id: 4,
-    judul: "4. Membaca Surat Al-Fatihah",
-    arab: "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ ﴿١﴾ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ﴿٢﴾ الرَّحْمَنِ الرَّحِيمِ ﴿٣﴾ مَالِكِ يَوْمِ الدِّينِ ﴿٤﴾ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ﴿٥﴾ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ﴿٦﴾ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ ﴿٧﴾",
-    latin: "Bismillaahir rahmaanir rahiim. Alhamdu lillaahi rabbil 'aalamiin. Arrahmaanir rahiim. Maaliki yawmid diin. Iyyaaka na'budu wa iyyaaka nasta'iin. Ihdinash shiraathal mustaqiim. Shiraathal ladziina an'amta 'alaihim ghairil maghdhuubi 'alaihim wa ladh dhaaalliin.",
-    arti: "Dengan menyebut nama Allah Yang Maha Pengasih lagi Maha Penyayang. Segala puji bagi Allah, Tuhan semesta alam. Yang Maha Pengasih lagi Maha Penyayang. Yang menguasai hari pembalasan. Hanya Engkaulah yang kami sembah dan hanya kepada Engkaulah kami memohon pertolongan. Tunjukilah kami jalan yang lurus. Yaitu jalan orang-orang yang telah Engkau beri nikmat, bukan jalan mereka yang dimurkai dan bukan pula jalan mereka yang sesat.",
-    deskripsi: "Membaca surat Al-Fatihah adalah rukun di setiap rakaat sholat. Setelahnya disunnahkan membaca surat pendek."
+    judul: "4. Ta'awwudz & Membaca Surat Al-Fatihah",
+    arab: "أَعُوْذُ بِاللّٰهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ ۞ بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ ﴿١﴾ الْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ ﴿٢﴾ الرَّحْمٰنِ الرَّحِيْمِ ﴿٣﴾ مَالِكِ يَوْمِ الدِّيْنِ ﴿٤﴾ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِيْنُ ﴿٥﴾ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيْمَ ﴿٦﴾ صِرَاطَ الَّذِيْنَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّيْنَ ﴿٧﴾",
+    latin: "A'uudzu billaahi minasy syaithaanir rajiim. Bismillaahir rahmaanir rahiim. Alhamdu lillaahi rabbil 'aalamiin. Arrahmaanir rahiim. Maaliki yawmid diin. Iyyaaka na'budu wa iyyaaka nasta'iin. Ihdinash shiraathal mustaqiim. Shiraathal ladziina an'amta 'alaihim ghairil maghdhuubi 'alaihim wa laadh dhaaalliin.",
+    arti: "Aku berlindung kepada Allah dari syaitan yang terkutuk. Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang. Segala puji bagi Allah, Tuhan semesta alam. Yang Maha Pengasih lagi Maha Penyayang. Yang menguasai hari pembalasan. Hanya Engkaulah yang kami sembah dan hanya kepada Engkaulah kami memohon pertolongan. Tunjukilah kami jalan yang lurus. Yaitu jalan orang-orang yang telah Engkau beri nikmat, bukan jalan mereka yang dimurkai dan bukan pula jalan mereka yang sesat.",
+    deskripsi: "Membaca ta'awwudz hukumnya sunnah, basmalah adalah ayat pertama Al-Fatihah dan wajib dibaca. Setelah selesai Al-Fatihah disunnahkan membaca 'Aamiin'. Setelahnya disunnahkan membaca surat pendek pada rakaat 1 dan 2."
   },
   {
     id: 5,
     judul: "5. Ruku' & Tuma'ninah",
-    arab: "سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ",
-    latin: "Subhaana rabbiyal 'adziimi wa bihamdih (3x)",
-    arti: "Maha Suci Tuhanku Yang Maha Agung dan pujian untuk-Nya.",
-    deskripsi: "Membungkuk hingga punggung rata, menahan sejenak (tuma'ninah), dan membaca doa ruku'."
+    arab: "سُبْحَانَ رَبِّيَ الْعَظِيْمِ وَبِحَمْدِهِ",
+    latin: "Subhaana rabbiyal 'azhiimi wa bihamdih (3x)",
+    arti: "Maha Suci Tuhanku Yang Maha Agung dan dengan memuji-Nya.",
+    deskripsi: "Membungkuk dengan punggung dan kepala sejajar (rata/horizontal), kedua tangan memegang lutut dengan jari-jari direnggangkan. Tuma'ninah wajib: berhenti minimal satu kali membaca tasbih dengan tenang. Bacaan minimal 1x, sempurnanya 3x."
   },
   {
     id: 6,
     judul: "6. I'tidal & Tuma'ninah",
-    arab: "سَمِعَ اللهُ لِمَنْ حَمِدَهُ، رَبَّنَا وَلَكَ الْحَمْدُ حَمْدًا كَثِيرًا طَيِّبًا مُبَارَكًا فِيهِ",
-    latin: "Sami'allaahu liman hamidah, rabbanaa wa lakal hamdu hamdan katsiiran thayyiban mubaarokan fiih.",
-    arti: "Allah Maha Mendengar orang yang memuji-Nya. Ya Tuhan kami, bagi-Mu segala puji, pujian yang banyak, baik, dan penuh berkah.",
-    deskripsi: "Bangkit dari ruku' kembali berdiri tegak, menahan sejenak, dan membaca doa i'tidal."
+    arab: "سَمِعَ اللّٰهُ لِمَنْ حَمِدَهُ ۞ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَاوَاتِ وَمِلْءَ الْأَرْضِ وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ",
+    latin: "Sami'allaahu liman hamidah. Rabbanaa lakal hamdu mil'as samaawaati wa mil'al ardhi wa mil'a maa syi'ta min syai'im ba'd.",
+    arti: "Allah Maha Mendengar orang yang memuji-Nya. Ya Tuhan kami, bagi-Mu segala puji sepenuh langit, sepenuh bumi, dan sepenuh apa yang Engkau kehendaki setelah itu.",
+    deskripsi: "Dalam mazhab Syafi'i (NU): imam dan makmum sama-sama membaca 'Sami'allaahu liman hamidah' saat bangkit dari ruku'. Kemudian setelah berdiri tegak, semua membaca 'Rabbanaa lakal hamdu mil'as samaawaati...' (bukan hanya 'Rabbanaa wa lakal hamdu'). Tuma'ninah wajib."
   },
   {
     id: 7,
-    judul: "7. Doa Qunut (Khusus Sholat Subuh)",
-    arab: "اللَّهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ، وَعَافِنِي فِيمَنْ عَافَيْتَ، وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ، وَبَارِكْ لِي فِيمَا أَعْطَيْتَ، وَقِنِي شَرَّ مَا قَضَيْتَ، فَإِنَّكَ تَقْضِي وَلَا يُقْضَى عَلَيْكَ، وَإِنَّهُ لَا يَذِلُّ مَنْ وَالَيْتَ، وَلَا يَعِزُّ مَنْ عَادَيْتَ، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ",
-    latin: "Allahummahdinii fiiman hadait, wa 'aafinii fiiman 'aafait, watawallanii fiiman tawallait, wabaarik lii fiimaa a'thait, waqinii syarra maa qadhait, fainnaka taqdhii walaa yuqdhaa 'alaik, wainnahuu laa yadzillu man waalait, walaa ya'izzu man 'aadait, tabaarakta rabbanaa wata'aalait.",
-    arti: "Ya Allah, berilah aku petunjuk seperti orang yang telah Engkau beri petunjuk. Berilah aku kesehatan seperti orang yang telah Engkau beri kesehatan. Pimpinlah aku bersama orang-orang yang telah Engkau pimpin. Berkahilah aku pada segala apa yang telah Engkau berikan kepadaku. Dan peliharalah aku dari kejahatan yang Engkau pastikan. Karena sesungguhnya Engkau-lah yang menentukan dan tidak ada yang menghukum atas Engkau. Sesungguhnya tidaklah akan hina orang yang telah Engkau beri kekuasaan. Dan tidaklah akan mulia orang yang Engkau musuhi. Maha Berkahlah Engkau dan Maha Luhurlah Engkau.",
-    deskripsi: "Dibaca pada rakaat kedua Sholat Subuh, tepat setelah bangkit dari ruku' (I'tidal) dan sebelum turun untuk sujud."
+    judul: "7. Doa Qunut Subuh",
+    arab: "اَللّٰهُمَّ اهْدِنِيْ فِيْمَنْ هَدَيْتَ، وَعَافِنِيْ فِيْمَنْ عَافَيْتَ، وَتَوَلَّنِيْ فِيْمَنْ تَوَلَّيْتَ، وَبَارِكْ لِيْ فِيْمَا أَعْطَيْتَ، وَقِنِيْ شَرَّ مَا قَضَيْتَ، فَإِنَّكَ تَقْضِيْ وَلَا يُقْضَى عَلَيْكَ، وَإِنَّهُ لَا يَذِلُّ مَنْ وَالَيْتَ، وَلَا يَعِزُّ مَنْ عَادَيْتَ، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ، فَلَكَ الْحَمْدُ عَلَى مَا قَضَيْتَ، أَسْتَغْفِرُكَ وَأَتُوْبُ إِلَيْكَ ۞ وَصَلَّى اللّٰهُ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الْأُمِّيِّ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ",
+    latin: "Allaahummahdini fiiman hadayt, wa 'aafinii fiiman 'aafayt, wa tawallaniy fiiman tawallayt, wa baarik liy fiimaa a'thayt, wa qiniy syarra maa qadhaayt, fa innaka taqdhiy wa laa yuqdhaa 'alayk, wa innahuu laa yadzillu man waalayt, wa laa ya'izzu man 'aadayt, tabaarakta rabbanaa wa ta'aalayt, falakal hamdu 'alaa maa qadhaayt, astaghfiruka wa atuubu ilayk. Wa shallallaahu 'alaa sayyidinaa muhammadin nabiyyil ummiyyi wa 'alaa aalihii wa shahbihii wa sallam.",
+    arti: "Ya Allah, berilah aku petunjuk sebagaimana orang yang telah Engkau beri petunjuk. Berilah aku kesehatan sebagaimana orang yang telah Engkau beri kesehatan. Pimpinlah aku sebagaimana orang yang telah Engkau pimpin. Berkahilah aku pada apa yang telah Engkau berikan. Lindungilah aku dari kejahatan yang telah Engkau tetapkan. Sesungguhnya Engkau yang menetapkan dan tidak ada yang menetapkan atas-Mu. Tidak akan hina orang yang Engkau beri kesetiaan. Tidak akan mulia orang yang Engkau musuhi. Maha Berkahlah Engkau ya Tuhan kami dan Maha Luhurlah Engkau. Maka bagi-Mu segala puji atas apa yang Engkau tetapkan. Aku memohon ampun kepada-Mu dan aku bertaubat kepada-Mu. Dan semoga Allah melimpahkan shalawat kepada junjungan kami Nabi Muhammad yang ummi, beserta keluarga dan sahabatnya, serta semoga Allah memberi keselamatan.",
+    deskripsi: "Qunut Subuh hukumnya SUNNAH AB'ADH — meninggalkannya disunnahkan sujud sahwi. Versi NU memiliki tambahan 'fallakal hamdu alaa maa qadhaayt, astaghfiruka wa atuubu ilayk' dan ditutup dengan SHOLAWAT kepada Nabi Muhammad. Dibaca pada rakaat ke-2 Subuh, setelah i'tidal berdiri tegak, sebelum sujud."
   },
   {
     id: 8,
     judul: "8. Sujud & Tuma'ninah",
     arab: "سُبْحَانَ رَبِّيَ الْأَعْلَى وَبِحَمْدِهِ",
     latin: "Subhaana rabbiyal a'laa wa bihamdih (3x)",
-    arti: "Maha Suci Tuhanku Yang Maha Tinggi dan pujian untuk-Nya.",
-    deskripsi: "Menempelkan dahi, hidung, kedua telapak tangan, lutut, dan ujung jari kaki ke lantai."
+    arti: "Maha Suci Tuhanku Yang Maha Tinggi dan dengan memuji-Nya.",
+    deskripsi: "Menempelkan 7 anggota sujud ke lantai: dahi (beserta hidung), kedua telapak tangan, kedua lutut, dan ujung jari-jari kedua kaki. Posisi siku tidak menempel lantai, jari kaki menghadap kiblat. Tuma'ninah wajib. Bacaan minimal 1x, sempurnanya 3x."
   },
   {
     id: 9,
     judul: "9. Duduk di Antara Dua Sujud",
-    arab: "رَبِّ اغْفِرْ لِي، وَارْحَمْنِي، وَاجْبُرْنِي، وَارْفَعْنِي، وَارْزُقْنِي، وَاهْدِنِي، وَعَافِنِي، وَاعْفُ عَنِّي",
-    latin: "Robbighfirlii warhamnii wajburnii warfa'nii warzuqnii wahdinii wa 'aafinii wa'fu 'annii",
+    arab: "رَبِّ اغْفِرْ لِيْ وَارْحَمْنِيْ وَاجْبُرْنِيْ وَارْفَعْنِيْ وَارْزُقْنِيْ وَاهْدِنِيْ وَعَافِنِيْ وَاعْفُ عَنِّيْ",
+    latin: "Rabbighfirlii warhamnii wajburnii warfa'nii warzuqnii wahdinii wa 'aafinii wa'fu 'annii.",
     arti: "Ya Tuhanku, ampunilah aku, rahmatilah aku, cukupkanlah aku, angkatlah derajatku, berilah aku rezeki, berilah aku petunjuk, sehatkanlah aku, dan maafkanlah aku.",
-    deskripsi: "Bangkit dari sujud pertama dan duduk tenang membaca doa."
+    deskripsi: "Bangkit dari sujud pertama dan duduk iftirasy: kaki kiri diduduki, kaki kanan ditegakkan dengan ujung jari menghadap kiblat. Tangan diletakkan di atas paha. Tuma'ninah wajib."
   },
   {
     id: 10,
-    judul: "10. Tasyahud Awal (Rakaat ke-2 pada sholat 3 & 4 rakaat)",
-    arab: "التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ، السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ",
-    latin: "At-tahiyyatul mubarakatush shalawatut thayyibatu lillah. Assalamu 'alaika ayyuhan nabiyyu warahmatullahi wabarakatuh. Assalamu 'alaina wa 'ala 'ibadillahish shalihin. Asyhadu alla ilaha illallah, wa asyhadu anna Muhammadar rasulullah.",
-    arti: "Segala penghormatan, keberkahan, shalawat dan kebaikan hanya milik Allah. Semoga keselamatan, rahmat Allah dan keberkahan-Nya tercurah kepadamu wahai Nabi. Semoga keselamatan tercurah kepada kami dan kepada hamba-hamba Allah yang saleh. Aku bersaksi bahwa tidak ada Tuhan selain Allah dan aku bersaksi bahwa Muhammad adalah utusan Allah.",
-    deskripsi: "Dibaca pada rakaat kedua sholat yang berjumlah 3 atau 4 rakaat, sebelum berdiri ke rakaat berikutnya."
+    judul: "10. Tasyahud Awal — Versi NU (Rakaat ke-2 pada sholat 3 & 4 rakaat)",
+    arab: "اَلتَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلّٰهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِيْنَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُوْلُ اللّٰهِ ۞ اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ",
+    latin: "At-tahiyyaatul mubaarakaatush shalawaatuth thayyibaatu lillaah. Assalaamu 'alaika ayyuhan nabiyyu wa rahmatullaahi wa barakaatuh. Assalaamu 'alainaa wa 'alaa 'ibaadillaahish shaalihiin. Asyhadu allaa ilaaha illallaah wa asyhadu anna muhammadan rasuulullaah. Allaahumma shalli 'alaa sayyidinaa muhammad.",
+    arti: "Segala penghormatan, keberkahan, shalawat, dan kebaikan hanyalah milik Allah. Semoga keselamatan, rahmat Allah, dan keberkahan-Nya terlimpah kepadamu wahai Nabi. Semoga keselamatan terlimpah kepada kami dan kepada hamba-hamba Allah yang shalih. Aku bersaksi bahwa tiada Tuhan selain Allah, dan aku bersaksi bahwa Muhammad adalah utusan Allah. Ya Allah, limpahkanlah shalawat kepada junjungan kami Nabi Muhammad.",
+    deskripsi: "Tasyahud memakai lafaz 'At-tahiyyaatul MUBAARAKAAT...' (riwayat Ibnu Abbas, HR. Muslim no. 403) — berbeda dengan versi lain yang memakai 'At-tahiyyaatu LILLAAHI...'. Ditambahkan 'SAYYIDINA' sebelum Muhammad sebagai bentuk ta'zhim (penghormatan) yang disunnahkan dalam mazhab Syafi'i. Pada tasyahud AWAL ditambah shalawat pendek sebelum berdiri."
   },
   {
     id: 11,
-    judul: "11. Tasyahud Akhir + Shalawat + Doa Perlindungan",
-    arab: "التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ، السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ. اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ",
-    latin: "At-tahiyyatul mubarakatush shalawatut thayyibatu lillah. Assalamu 'alaika ayyuhan nabiyyu warahmatullahi wabarakatuh. Assalamu 'alaina wa 'ala 'ibadillahish shalihin. Asyhadu alla ilaha illallah, wa asyhadu anna Muhammadar rasulullah. Allahumma shalli 'ala Muhammad wa 'ala ali Muhammad kama shallaita 'ala Ibrahim wa 'ala ali Ibrahim innaka hamidum majid. Allahumma barik 'ala Muhammad wa 'ala ali Muhammad kama barakta 'ala Ibrahim wa 'ala ali Ibrahim innaka hamidum majid. Allahumma inni a'udzu bika min 'adzabi jahannam, wa min 'adzabil qabr, wa min fitnatil mahya wal mamat, wa min sharri fitnatil masihid dajjal.",
-    arti: "Segala penghormatan, keberkahan, shalawat dan kebaikan hanya milik Allah. Semoga keselamatan, rahmat Allah dan keberkahan-Nya tercurah kepadamu wahai Nabi. Semoga keselamatan tercurah kepada kami dan kepada hamba-hamba Allah yang saleh. Aku bersaksi bahwa tidak ada Tuhan selain Allah dan aku bersaksi bahwa Muhammad adalah utusan Allah. Ya Allah, limpahkanlah rahmat kepada Muhammad dan keluarga Muhammad sebagaimana Engkau telah melimpahkan rahmat kepada Ibrahim dan keluarga Ibrahim. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia. Ya Allah, limpahkanlah keberkahan kepada Muhammad dan keluarga Muhammad sebagaimana Engkau telah melimpahkan keberkahan kepada Ibrahim dan keluarga Ibrahim. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia. Ya Allah, sesungguhnya aku berlindung kepada-Mu dari siksa Jahannam, dari siksa kubur, dari fitnah kehidupan dan kematian, serta dari kejahatan fitnah Al-Masih Ad-Dajjal.",
-    deskripsi: "Dibaca pada rakaat terakhir. Tasyahud akhir dilengkapi Shalawat Ibrahimiyah dan doa perlindungan sebelum salam."
+    judul: "11. Tasyahud Akhir + Shalawat Ibrahimiyah + Doa Perlindungan",
+    arab: "اَلتَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلّٰهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِيْنَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُوْلُ اللّٰهِ ۞ اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى سَيِّدِنَا إِبْرَاهِيْمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيْمَ، وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى سَيِّدِنَا إِبْرَاهِيْمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيْمَ فِي الْعَالَمِيْنَ إِنَّكَ حَمِيْدٌ مَجِيْدٌ ۞ اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيْحِ الدَّجَّالِ",
+    latin: "At-tahiyyaatul mubaarakaatush shalawaatuth thayyibaatu lillaah. Assalaamu 'alaika ayyuhan nabiyyu wa rahmatullaahi wa barakaatuh. Assalaamu 'alainaa wa 'alaa 'ibaadillaahish shaalihiin. Asyhadu allaa ilaaha illallaah wa asyhadu anna muhammadan rasuulullaah. Allaahumma shalli 'alaa sayyidinaa muhammadin wa 'alaa aali sayyidinaa muhammadin kamaa shallaita 'alaa sayyidinaa ibraahiima wa 'alaa aali sayyidinaa ibraahiim, wa baarik 'alaa sayyidinaa muhammadin wa 'alaa aali sayyidinaa muhammadin kamaa baarakta 'alaa sayyidinaa ibraahiima wa 'alaa aali sayyidinaa ibraahiima fil 'aalamiina innaka hamiidun majiid. Allaahumma innii a'uudzu bika min 'adzaabi jahannam, wa min 'adzaabil qabr, wa min fitnatil mahyaa wal mamaat, wa min syarri fitnatil masiihid dajjaal.",
+    arti: "Segala penghormatan, keberkahan, shalawat, dan kebaikan hanyalah milik Allah. Semoga keselamatan, rahmat Allah, dan keberkahan-Nya terlimpah kepadamu wahai Nabi. Semoga keselamatan terlimpah kepada kami dan kepada hamba-hamba Allah yang shalih. Aku bersaksi bahwa tiada Tuhan selain Allah, dan aku bersaksi bahwa Muhammad adalah utusan Allah. Ya Allah, limpahkanlah shalawat kepada junjungan kami Muhammad dan keluarga junjungan kami Muhammad, sebagaimana Engkau telah melimpahkan shalawat kepada junjungan kami Ibrahim dan keluarga junjungan kami Ibrahim. Dan berkahilah junjungan kami Muhammad dan keluarga junjungan kami Muhammad, sebagaimana Engkau telah memberkahi junjungan kami Ibrahim dan keluarga junjungan kami Ibrahim, di seluruh alam semesta. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia. Ya Allah, sesungguhnya aku berlindung kepada-Mu dari siksa Jahannam, dari siksa kubur, dari fitnah kehidupan dan kematian, serta dari kejahatan fitnah Al-Masih Ad-Dajjal.",
+    deskripsi: " Shalawat Ibrahimiyah versi NU memiliki 3 perbedaan dari versi lain: Tambahan 'SAYYIDINA' sebelum Muhammad dan Ibrahim sebagai ta'zhim. (2) Tambahan 'FIL 'AALAMIINA' sebelum 'innaka hamiidun majiid'. Lafaz tasyahud tetap memakai 'At-tahiyyaatul MUBAARAKAAT...' seperti tasyahud awal. Dibaca pada rakaat terakhir sebelum salam."
   },
   {
     id: 12,
     judul: "12. Salam",
     arab: "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللّٰهِ",
-    latin: "Assalaamu'alaikum warahmatullaah",
-    arti: "Semoga keselamatan dan rahmat Allah terlimpah untukmu.",
-    deskripsi: "Menoleh ke kanan hingga terlihat pipi kanan dari belakang, lalu menoleh ke kiri dengan ucapan yang sama."
+    latin: "Assalaamu 'alaikum wa rahmatullaah",
+    arti: "Semoga keselamatan dan rahmat Allah terlimpah kepada kalian.",
+    deskripsi: "Menoleh ke kanan hingga terlihat pipi kanan dari arah belakang, lalu menoleh ke kiri dengan bacaan yang sama. Dalam mazhab Syafi'i (NU): salam pertama ke kanan adalah RUKUN sholat (wajib), salam kedua ke kiri hukumnya SUNNAH."
   }
 ];
-
 
 // ===== TATA CARA SHOLAT IDUL FITRI & IDUL ADHA =====
 
@@ -253,9 +252,9 @@ export const dataIdulFitriAdha = [
   {
     id: 10,
     judul: "10. Tasyahud Akhir + Shalawat",
-    arab: "التَّحِيَّاتُ الْمُبَارَكَاتُ... اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ...",
-    latin: "At-tahiyyatul mubarakatush... Allahumma shalli 'ala Muhammad wa 'ala ali Muhammad...",
-    arti: "Tasyahud akhir lengkap beserta shalawat Ibrahimiyah.",
+     arab: "اَلتَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلّٰهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِيْنَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُوْلُ اللّٰهِ ۞ اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى سَيِّدِنَا إِبْرَاهِيْمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيْمَ، وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى سَيِّدِنَا إِبْرَاهِيْمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيْمَ فِي الْعَالَمِيْنَ إِنَّكَ حَمِيْدٌ مَجِيْدٌ ۞ اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيْحِ الدَّجَّالِ",
+    latin: "At-tahiyyaatul mubaarakaatush shalawaatuth thayyibaatu lillaah. Assalaamu 'alaika ayyuhan nabiyyu wa rahmatullaahi wa barakaatuh. Assalaamu 'alainaa wa 'alaa 'ibaadillaahish shaalihiin. Asyhadu allaa ilaaha illallaah wa asyhadu anna muhammadan rasuulullaah. Allaahumma shalli 'alaa sayyidinaa muhammadin wa 'alaa aali sayyidinaa muhammadin kamaa shallaita 'alaa sayyidinaa ibraahiima wa 'alaa aali sayyidinaa ibraahiim, wa baarik 'alaa sayyidinaa muhammadin wa 'alaa aali sayyidinaa muhammadin kamaa baarakta 'alaa sayyidinaa ibraahiima wa 'alaa aali sayyidinaa ibraahiima fil 'aalamiina innaka hamiidun majiid. Allaahumma innii a'uudzu bika min 'adzaabi jahannam, wa min 'adzaabil qabr, wa min fitnatil mahyaa wal mamaat, wa min syarri fitnatil masiihid dajjaal.",
+    arti: "Segala penghormatan, keberkahan, shalawat, dan kebaikan hanyalah milik Allah. Semoga keselamatan, rahmat Allah, dan keberkahan-Nya terlimpah kepadamu wahai Nabi. Semoga keselamatan terlimpah kepada kami dan kepada hamba-hamba Allah yang shalih. Aku bersaksi bahwa tiada Tuhan selain Allah, dan aku bersaksi bahwa Muhammad adalah utusan Allah. Ya Allah, limpahkanlah shalawat kepada junjungan kami Muhammad dan keluarga junjungan kami Muhammad, sebagaimana Engkau telah melimpahkan shalawat kepada junjungan kami Ibrahim dan keluarga junjungan kami Ibrahim. Dan berkahilah junjungan kami Muhammad dan keluarga junjungan kami Muhammad, sebagaimana Engkau telah memberkahi junjungan kami Ibrahim dan keluarga junjungan kami Ibrahim, di seluruh alam semesta. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia. Ya Allah, sesungguhnya aku berlindung kepada-Mu dari siksa Jahannam, dari siksa kubur, dari fitnah kehidupan dan kematian, serta dari kejahatan fitnah Al-Masih Ad-Dajjal.",
     deskripsi: "Tidak ada tasyahud awal karena sholat Id hanya 2 rakaat."
   },
   {
@@ -373,6 +372,9 @@ export const dataJumat = [
   {
     id: 8,
     judul: "8. Tasyahud Akhir + Shalawat + Doa Perlindungan",
+    arab: "اَلتَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلّٰهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِيْنَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُوْلُ اللّٰهِ ۞ اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى سَيِّدِنَا إِبْرَاهِيْمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيْمَ، وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى سَيِّدِنَا إِبْرَاهِيْمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيْمَ فِي الْعَالَمِيْنَ إِنَّكَ حَمِيْدٌ مَجِيْدٌ ۞ اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيْحِ الدَّجَّالِ",
+    latin: "At-tahiyyaatul mubaarakaatush shalawaatuth thayyibaatu lillaah. Assalaamu 'alaika ayyuhan nabiyyu wa rahmatullaahi wa barakaatuh. Assalaamu 'alainaa wa 'alaa 'ibaadillaahish shaalihiin. Asyhadu allaa ilaaha illallaah wa asyhadu anna muhammadan rasuulullaah. Allaahumma shalli 'alaa sayyidinaa muhammadin wa 'alaa aali sayyidinaa muhammadin kamaa shallaita 'alaa sayyidinaa ibraahiima wa 'alaa aali sayyidinaa ibraahiim, wa baarik 'alaa sayyidinaa muhammadin wa 'alaa aali sayyidinaa muhammadin kamaa baarakta 'alaa sayyidinaa ibraahiima wa 'alaa aali sayyidinaa ibraahiima fil 'aalamiina innaka hamiidun majiid. Allaahumma innii a'uudzu bika min 'adzaabi jahannam, wa min 'adzaabil qabr, wa min fitnatil mahyaa wal mamaat, wa min syarri fitnatil masiihid dajjaal.",
+    arti: "Segala penghormatan, keberkahan, shalawat, dan kebaikan hanyalah milik Allah. Semoga keselamatan, rahmat Allah, dan keberkahan-Nya terlimpah kepadamu wahai Nabi. Semoga keselamatan terlimpah kepada kami dan kepada hamba-hamba Allah yang shalih. Aku bersaksi bahwa tiada Tuhan selain Allah, dan aku bersaksi bahwa Muhammad adalah utusan Allah. Ya Allah, limpahkanlah shalawat kepada junjungan kami Muhammad dan keluarga junjungan kami Muhammad, sebagaimana Engkau telah melimpahkan shalawat kepada junjungan kami Ibrahim dan keluarga junjungan kami Ibrahim. Dan berkahilah junjungan kami Muhammad dan keluarga junjungan kami Muhammad, sebagaimana Engkau telah memberkahi junjungan kami Ibrahim dan keluarga junjungan kami Ibrahim, di seluruh alam semesta. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia. Ya Allah, sesungguhnya aku berlindung kepada-Mu dari siksa Jahannam, dari siksa kubur, dari fitnah kehidupan dan kematian, serta dari kejahatan fitnah Al-Masih Ad-Dajjal.",
     deskripsi: "Membaca tasyahud akhir beserta shalawat Ibrahimiyah dan doa perlindungan. Tidak ada tasyahud awal karena hanya 2 rakaat."
   },
   {
@@ -418,9 +420,9 @@ export const dataDhuha = [
   {
     id: 5,
     judul: "5. Tasyahud Akhir, Shalawat & Salam",
-    arab: "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللّٰهِ",
-    latin: "Assalaamu'alaikum warahmatullaah",
-    arti: "Semoga keselamatan dan rahmat Allah terlimpah untukmu.",
+    arab: "اَلتَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلّٰهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِيْنَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُوْلُ اللّٰهِ ۞ اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى سَيِّدِنَا إِبْرَاهِيْمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيْمَ، وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى سَيِّدِنَا إِبْرَاهِيْمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيْمَ فِي الْعَالَمِيْنَ إِنَّكَ حَمِيْدٌ مَجِيْدٌ ۞ اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيْحِ الدَّجَّالِ",
+    latin: "At-tahiyyaatul mubaarakaatush shalawaatuth thayyibaatu lillaah. Assalaamu 'alaika ayyuhan nabiyyu wa rahmatullaahi wa barakaatuh. Assalaamu 'alainaa wa 'alaa 'ibaadillaahish shaalihiin. Asyhadu allaa ilaaha illallaah wa asyhadu anna muhammadan rasuulullaah. Allaahumma shalli 'alaa sayyidinaa muhammadin wa 'alaa aali sayyidinaa muhammadin kamaa shallaita 'alaa sayyidinaa ibraahiima wa 'alaa aali sayyidinaa ibraahiim, wa baarik 'alaa sayyidinaa muhammadin wa 'alaa aali sayyidinaa muhammadin kamaa baarakta 'alaa sayyidinaa ibraahiima wa 'alaa aali sayyidinaa ibraahiima fil 'aalamiina innaka hamiidun majiid. Allaahumma innii a'uudzu bika min 'adzaabi jahannam, wa min 'adzaabil qabr, wa min fitnatil mahyaa wal mamaat, wa min syarri fitnatil masiihid dajjaal.",
+    arti: "Segala penghormatan, keberkahan, shalawat, dan kebaikan hanyalah milik Allah. Semoga keselamatan, rahmat Allah, dan keberkahan-Nya terlimpah kepadamu wahai Nabi. Semoga keselamatan terlimpah kepada kami dan kepada hamba-hamba Allah yang shalih. Aku bersaksi bahwa tiada Tuhan selain Allah, dan aku bersaksi bahwa Muhammad adalah utusan Allah. Ya Allah, limpahkanlah shalawat kepada junjungan kami Muhammad dan keluarga junjungan kami Muhammad, sebagaimana Engkau telah melimpahkan shalawat kepada junjungan kami Ibrahim dan keluarga junjungan kami Ibrahim. Dan berkahilah junjungan kami Muhammad dan keluarga junjungan kami Muhammad, sebagaimana Engkau telah memberkahi junjungan kami Ibrahim dan keluarga junjungan kami Ibrahim, di seluruh alam semesta. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia. Ya Allah, sesungguhnya aku berlindung kepada-Mu dari siksa Jahannam, dari siksa kubur, dari fitnah kehidupan dan kematian, serta dari kejahatan fitnah Al-Masih Ad-Dajjal.",
     deskripsi: "Membaca tasyahud akhir dan shalawat, lalu salam. Setelah salam disunnahkan membaca doa Dhuha."
   },
   {
@@ -466,9 +468,9 @@ export const dataTahajjud = [
   {
     id: 5,
     judul: "5. Tasyahud Akhir, Shalawat & Salam",
-    arab: "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللّٰهِ",
-    latin: "Assalaamu'alaikum warahmatullaah",
-    arti: "Semoga keselamatan dan rahmat Allah terlimpah untukmu.",
+    arab: "اَلتَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلّٰهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِيْنَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُوْلُ اللّٰهِ ۞ اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى سَيِّدِنَا إِبْرَاهِيْمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيْمَ، وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى سَيِّدِنَا إِبْرَاهِيْمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيْمَ فِي الْعَالَمِيْنَ إِنَّكَ حَمِيْدٌ مَجِيْدٌ ۞ اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيْحِ الدَّجَّالِ",
+    latin: "At-tahiyyaatul mubaarakaatush shalawaatuth thayyibaatu lillaah. Assalaamu 'alaika ayyuhan nabiyyu wa rahmatullaahi wa barakaatuh. Assalaamu 'alainaa wa 'alaa 'ibaadillaahish shaalihiin. Asyhadu allaa ilaaha illallaah wa asyhadu anna muhammadan rasuulullaah. Allaahumma shalli 'alaa sayyidinaa muhammadin wa 'alaa aali sayyidinaa muhammadin kamaa shallaita 'alaa sayyidinaa ibraahiima wa 'alaa aali sayyidinaa ibraahiim, wa baarik 'alaa sayyidinaa muhammadin wa 'alaa aali sayyidinaa muhammadin kamaa baarakta 'alaa sayyidinaa ibraahiima wa 'alaa aali sayyidinaa ibraahiima fil 'aalamiina innaka hamiidun majiid. Allaahumma innii a'uudzu bika min 'adzaabi jahannam, wa min 'adzaabil qabr, wa min fitnatil mahyaa wal mamaat, wa min syarri fitnatil masiihid dajjaal.",
+    arti: "Segala penghormatan, keberkahan, shalawat, dan kebaikan hanyalah milik Allah. Semoga keselamatan, rahmat Allah, dan keberkahan-Nya terlimpah kepadamu wahai Nabi. Semoga keselamatan terlimpah kepada kami dan kepada hamba-hamba Allah yang shalih. Aku bersaksi bahwa tiada Tuhan selain Allah, dan aku bersaksi bahwa Muhammad adalah utusan Allah. Ya Allah, limpahkanlah shalawat kepada junjungan kami Muhammad dan keluarga junjungan kami Muhammad, sebagaimana Engkau telah melimpahkan shalawat kepada junjungan kami Ibrahim dan keluarga junjungan kami Ibrahim. Dan berkahilah junjungan kami Muhammad dan keluarga junjungan kami Muhammad, sebagaimana Engkau telah memberkahi junjungan kami Ibrahim dan keluarga junjungan kami Ibrahim, di seluruh alam semesta. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia. Ya Allah, sesungguhnya aku berlindung kepada-Mu dari siksa Jahannam, dari siksa kubur, dari fitnah kehidupan dan kematian, serta dari kejahatan fitnah Al-Masih Ad-Dajjal.",
     deskripsi: "Membaca tasyahud akhir dan shalawat, lalu salam. Dilanjutkan rakaat berikutnya atau doa malam."
   },
   {
@@ -522,9 +524,9 @@ export const dataWitir = [
   {
     id: 6,
     judul: "6. Tasyahud Akhir, Shalawat & Salam",
-    arab: "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللّٰهِ",
-    latin: "Assalaamu'alaikum warahmatullaah",
-    arti: "Semoga keselamatan dan rahmat Allah terlimpah untukmu.",
+    arab: "اَلتَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلّٰهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللّٰهِ الصَّالِحِيْنَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُوْلُ اللّٰهِ ۞ اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى سَيِّدِنَا إِبْرَاهِيْمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيْمَ، وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى سَيِّدِنَا إِبْرَاهِيْمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيْمَ فِي الْعَالَمِيْنَ إِنَّكَ حَمِيْدٌ مَجِيْدٌ ۞ اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيْحِ الدَّجَّالِ",
+    latin: "At-tahiyyaatul mubaarakaatush shalawaatuth thayyibaatu lillaah. Assalaamu 'alaika ayyuhan nabiyyu wa rahmatullaahi wa barakaatuh. Assalaamu 'alainaa wa 'alaa 'ibaadillaahish shaalihiin. Asyhadu allaa ilaaha illallaah wa asyhadu anna muhammadan rasuulullaah. Allaahumma shalli 'alaa sayyidinaa muhammadin wa 'alaa aali sayyidinaa muhammadin kamaa shallaita 'alaa sayyidinaa ibraahiima wa 'alaa aali sayyidinaa ibraahiim, wa baarik 'alaa sayyidinaa muhammadin wa 'alaa aali sayyidinaa muhammadin kamaa baarakta 'alaa sayyidinaa ibraahiima wa 'alaa aali sayyidinaa ibraahiima fil 'aalamiina innaka hamiidun majiid. Allaahumma innii a'uudzu bika min 'adzaabi jahannam, wa min 'adzaabil qabr, wa min fitnatil mahyaa wal mamaat, wa min syarri fitnatil masiihid dajjaal.",
+    arti: "Segala penghormatan, keberkahan, shalawat, dan kebaikan hanyalah milik Allah. Semoga keselamatan, rahmat Allah, dan keberkahan-Nya terlimpah kepadamu wahai Nabi. Semoga keselamatan terlimpah kepada kami dan kepada hamba-hamba Allah yang shalih. Aku bersaksi bahwa tiada Tuhan selain Allah, dan aku bersaksi bahwa Muhammad adalah utusan Allah. Ya Allah, limpahkanlah shalawat kepada junjungan kami Muhammad dan keluarga junjungan kami Muhammad, sebagaimana Engkau telah melimpahkan shalawat kepada junjungan kami Ibrahim dan keluarga junjungan kami Ibrahim. Dan berkahilah junjungan kami Muhammad dan keluarga junjungan kami Muhammad, sebagaimana Engkau telah memberkahi junjungan kami Ibrahim dan keluarga junjungan kami Ibrahim, di seluruh alam semesta. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia. Ya Allah, sesungguhnya aku berlindung kepada-Mu dari siksa Jahannam, dari siksa kubur, dari fitnah kehidupan dan kematian, serta dari kejahatan fitnah Al-Masih Ad-Dajjal.",
     deskripsi: "Membaca tasyahud akhir dan shalawat lalu salam. Witir adalah penutup sholat malam, tidak diulangi setelahnya."
   }
 ];
