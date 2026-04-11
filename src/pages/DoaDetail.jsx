@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-
-// 📂 IMPORT DATA LOKAL KITA (Ganti doaApi dengan ini)
 import { dataDoaHarian } from '../data/dataDoa';
 
 export default function DoaDetail() {
@@ -12,14 +10,14 @@ export default function DoaDetail() {
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
 
-  // 1. KITA UBAH ID DARI URL MENJADI ANGKA
+  // 1. UBAH ID DARI URL MENJADI ANGKA
   const doaId = parseInt(id);
 
   // 2. MENCARI POSISI DOA DI DALAM DATABASE LOKAL
   const currentIndex = dataDoaHarian.findIndex((doa) => doa.id === doaId);
   const detailDoa = dataDoaHarian[currentIndex];
 
-  // JIKA DOA TIDAK DITEMUKAN (Atau ID ngawur)
+  // JIKA DOA TIDAK DITEMUKAN
   if (!detailDoa) {
     return (
       <div className="text-center py-20 animate-fade-in">
@@ -49,8 +47,8 @@ export default function DoaDetail() {
   const onTouchEnd = () => {
     if (!touchStart || !touchEnd) return;
     const jarakSwipe = touchStart - touchEnd;
-    if (jarakSwipe > batasSwipe) keDoaSelanjutnya(); // Usap ke Kiri -> Next
-    if (jarakSwipe < -batasSwipe) keDoaSebelumnya(); // Usap ke Kanan -> Prev
+    if (jarakSwipe > batasSwipe) keDoaSelanjutnya();
+    if (jarakSwipe < -batasSwipe) keDoaSebelumnya();
   };
 
   // 5. PENARIKAN DATA
@@ -68,7 +66,7 @@ export default function DoaDetail() {
       onTouchEnd={onTouchEnd}
     >
       
-      {/* 🧭 NAVIGASI ATAS (KEMBALI & NEXT/PREV) */}
+      {/* NAVIGASI ATAS (KEMBALI & NEXT/PREV) */}
       <div className="flex flex-wrap items-center justify-between mb-6 gap-4">
         <Link to="/doa" className="text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 dark:hover:text-emerald-300 font-medium inline-flex items-center transition bg-emerald-50 dark:bg-slate-800 px-4 py-2 rounded-full border border-emerald-100 dark:border-slate-700">
           <span className="mr-2">&larr;</span> Kembali
@@ -85,7 +83,7 @@ export default function DoaDetail() {
         </div>
       </div>
 
-      {/* 🌸 HEADER DOA */}
+      {/* HEADER DOA */}
       <div className="bg-emerald-600 text-white rounded-3xl p-8 md:p-12 mb-8 text-center shadow-lg bg-gradient-to-br from-emerald-500 to-emerald-700 dark:from-slate-800 dark:to-slate-900 border dark:border-slate-700 relative overflow-hidden group">
         <div className="absolute -right-4 -bottom-4 text-8xl opacity-10 group-hover:scale-110 transition-transform duration-500">🤲</div>
         <h1 className="text-3xl md:text-5xl font-bold mb-4 relative z-10">{judulDoa}</h1>
