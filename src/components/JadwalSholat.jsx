@@ -5,8 +5,6 @@ export default function JadwalSholat() {
   const [jadwal, setJadwal] = useState(null);
   const [lokasi, setLokasi] = useState('Mendeteksi lokasi... 📍');
   const [waktuSekarang, setWaktuSekarang] = useState(new Date());
-  
-  // State Baru: Untuk Fitur Ganti Kota Manual
   const [modeCari, setModeCari] = useState(false);
   const [inputKota, setInputKota] = useState('');
   
@@ -20,7 +18,7 @@ export default function JadwalSholat() {
       const res = await axios.get(`https://api.aladhan.com/v1/timings?latitude=${lat}&longitude=${lon}&method=20`);
       const dataWaktu = res.data.data.timings;
       
-      // Imsak sekarang ditambahkan!
+      // Imsak
       setJadwal({
         Imsak: dataWaktu.Imsak,
         Subuh: dataWaktu.Fajr,
@@ -42,8 +40,8 @@ export default function JadwalSholat() {
     if (!inputKota.trim()) return;
 
     setLokasi('Mencari kota... 🔍');
-    setModeCari(false); // Tutup form pencarian
-    setJadwal(null); // Tampilkan animasi loading sebentar
+    setModeCari(false);
+    setJadwal(null);
 
     try {
       // Menggunakan endpoint timingsByCity dari Aladhan
@@ -97,7 +95,6 @@ export default function JadwalSholat() {
       setWaktuSekarang(sekarang);
 
       if (jadwal) {
-        // Imsak ditambahkan ke dalam siklus putaran waktu
         const listSholat = [
           { nama: 'Imsak', waktuStr: jadwal.Imsak, ikon: '✨' },
           { nama: 'Subuh', waktuStr: jadwal.Subuh, ikon: '🌅' },
@@ -223,7 +220,6 @@ export default function JadwalSholat() {
 
       {/* BAGIAN BAWAH: 6 Kotak Jadwal (Kini menampilkan Imsak) */}
       {jadwal ? (
-        // Menggunakan grid-cols-3 untuk HP agar menjadi 2 baris (3 atas, 3 bawah), dan grid-cols-6 untuk layar besar
         <div className="grid grid-cols-3 lg:grid-cols-6 gap-2 md:gap-3 mt-8 pt-6 border-t border-slate-100 dark:border-slate-700">
           {['Imsak', 'Subuh', 'Dzuhur', 'Ashar', 'Maghrib', 'Isya'].map((nama) => {
             const isNext = infoSelanjutnya.nama === nama;
