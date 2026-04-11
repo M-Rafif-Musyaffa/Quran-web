@@ -1,7 +1,6 @@
 import useQuranStore from '../store/useQuranStore';
 
 export default function Pengaturan() {
-  // Mengambil semua fungsi dan state dari Gudang Data
   const { 
     ukuranFontArab, setUkuranFontArab,
     jenisFontArab, setJenisFontArab,
