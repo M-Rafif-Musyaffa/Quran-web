@@ -74,7 +74,7 @@ export default function SurahDetail() {
         <span className="mr-2">🌱</span> Kembali ke Beranda
       </Link>
       
-      {/* HEADER CUTE & ELEGAN */}
+      {/* HEADER */}
       <div className="bg-emerald-600 text-white rounded-3xl p-8 mb-8 text-center shadow-lg bg-gradient-to-br from-emerald-500 to-emerald-700 dark:from-slate-800 dark:to-slate-900 border dark:border-slate-700 relative overflow-hidden">
         
         {/* Dekorasi Awan & Bintang Lucu */}
