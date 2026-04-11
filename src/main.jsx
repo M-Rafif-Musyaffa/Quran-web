@@ -2,16 +2,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-// Mengimpor komponen utama aplikasi kita
+// Mengimpor komponen utama aplikasi 
 import App from './App.jsx';
 
-// Mengimpor file CSS yang sudah berisi Tailwind
+// Mengimpor file CSS 
 import './index.css';
 
 // Mengimpor Asisten Pintar (QueryClient) dan Pembungkusnya (QueryClientProvider)
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-// Membuat satu Asisten Pintar baru untuk menjaga memori (cache) aplikasi kita
+// Membuat satu Asisten Pintar baru untuk menjaga memori aplikasi 
 const queryClient = new QueryClient();
 
 // Merender aplikasi ke dalam elemen HTML yang memiliki id="root"
