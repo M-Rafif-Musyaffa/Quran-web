@@ -48,19 +48,3 @@ Aplikasi ini dibangun menggunakan *stack* modern tanpa bergantung pada *database
 
 ---
 
-## 🚀 Cara Menjalankan di Komputer Lokal
-
-Jika Anda ingin mencoba menjalankan atau ikut mengembangkan aplikasi ini, ikuti langkah-langkah berikut:
-
-1. **Clone repository ini:**
-   ```bash
-   git clone [https://github.com/M-Rafif-Musyaffa/Quran-web.git]
-2. **Masuk ke folder proyek:**
-   ```bash
-   cd Quran-web
-3. **Install semua dependensi:**
-   ```bash
-   npm install
-4. **Jalankan server pengembangan (Localhost):**
-   ```bash
-   npm run dev 
