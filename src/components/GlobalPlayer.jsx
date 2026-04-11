@@ -5,10 +5,10 @@ export default function GlobalPlayer() {
   const { audioData, tutupAudio } = useQuranStore();
   const audioRef = useRef(null);
 
-  // Efek: Otomatis memutar audio (Auto-play) saat lagu berganti
+  // Efek: Otomatis memutar audio (Auto-play)
   useEffect(() => {
     if (audioRef.current && audioData) {
-      // Browser modern butuh penanganan error jika autoplay dicegah
+      // penanganan error jika autoplay dicegah
       audioRef.current.play().catch((err) => console.log('Autoplay dicegah browser:', err));
     }
   }, [audioData]);
