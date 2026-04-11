@@ -1,10 +1,6 @@
 import { useState } from 'react';
-
-// Mengimpor database lokal Wudhu & Haji
 import { dataWudhu } from '../data/panduanIbadah';
 import { dataHajiUmrah } from '../data/dataHajiUmrah';
-
-// Mengimpor database Sholat BARU milikmu
 import { 
   niatSholat, dataSholat as tataCaraFardhu, dataIdulFitriAdha, 
   dataJenazah, dataJumat, dataDhuha, dataTahajjud, dataWitir 
@@ -113,7 +109,7 @@ export default function Panduan() {
   return (
     <div className="max-w-5xl mx-auto py-4">
       
-      {/* 🌸 HEADER */}
+      {/* HEADER */}
       <div className="bg-emerald-600 text-white rounded-3xl p-8 md:p-10 mb-8 text-center shadow-lg bg-gradient-to-br from-emerald-500 to-emerald-700 dark:from-slate-800 dark:to-slate-900 border dark:border-slate-700 relative overflow-hidden">
         <div className="absolute top-4 left-6 opacity-20 text-6xl md:text-7xl animate-pulse">☁️</div>
         <div className="absolute bottom-6 right-10 opacity-20 text-5xl animate-pulse" style={{ animationDelay: '0.5s' }}>✨</div>
@@ -132,7 +128,7 @@ export default function Panduan() {
         </div>
       </div>
 
-      {/* 🧭 TABS UTAMA */}
+      {/* TABS UTAMA */}
       <div className="flex flex-wrap justify-center mb-10">
         <div className="bg-slate-200/50 dark:bg-slate-800 p-1.5 rounded-3xl flex flex-wrap justify-center gap-2 border border-slate-100 dark:border-slate-700">
           <button onClick={() => setTabAktif('wudhu')} className={`px-6 py-2.5 rounded-2xl font-bold transition-all ${tabAktif === 'wudhu' ? 'bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 shadow-sm border border-blue-200' : 'text-slate-500 hover:text-slate-700 border border-transparent'}`}>💧 Wudhu</button>
@@ -141,9 +137,7 @@ export default function Panduan() {
         </div>
       </div>
 
-      {/* ========================================= */}
-      {/* 💧 KONTEN TAB: WUDHU */}
-      {/* ========================================= */}
+      {/*  KONTEN TAB: WUDHU */}
       {tabAktif === 'wudhu' && (
         <div className="space-y-6 pb-10 animate-fade-in">
           {dataWudhu.map((item) => (
@@ -164,10 +158,7 @@ export default function Panduan() {
           ))}
         </div>
       )}
-
-      {/* ========================================= */}
       {/* 🕌 KONTEN TAB: SHOLAT (TERINTEGRASI DGN JSON BARU) */}
-      {/* ========================================= */}
       {tabAktif === 'sholat' && (
         <div className="animate-fade-in pb-10">
           
@@ -221,9 +212,7 @@ export default function Panduan() {
         </div>
       )}
 
-      {/* ========================================= */}
-      {/* 🕋 KONTEN TAB: HAJI & UMRAH (Timeline Asli) */}
-      {/* ========================================= */}
+      {/* KONTEN TAB: HAJI & UMRAH (Timeline Asli) */}
       {tabAktif === 'haji' && (
         <div className="animate-fade-in pb-10">
           <div className="flex justify-center gap-4 mb-10">
