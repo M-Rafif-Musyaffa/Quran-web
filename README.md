@@ -54,7 +54,7 @@ Jika Anda ingin mencoba menjalankan atau ikut mengembangkan aplikasi ini, ikuti 
 
 1. **Clone repository ini:**
    ```bash
-   git clone [https://github.com/M-Rafif-Musyaffa/Quran-web.git](https://github.com/M-Rafif-Musyaffa/Quran-web.git)
+   git clone [https://github.com/M-Rafif-Musyaffa/Quran-web.git]
 2. **Masuk ke folder proyek:**
    ```bash
    cd Quran-web
