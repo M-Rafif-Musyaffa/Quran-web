@@ -9,7 +9,7 @@ export default function Kamus() {
     (a.istilah || "").localeCompare(b.istilah || "")
   );
 
-  // 🛡️ FITUR PENCARIAN ANTI-CRASH
+  // FITUR PENCARIAN ANTI-CRASH
   const hasilCari = kamusTerurut.filter((item) => {
     const keyword = kataKunci.toLowerCase();
     
@@ -19,7 +19,7 @@ export default function Kamus() {
     const contoh = (item.contoh || "").toLowerCase();
     const kategori = (item.kategori || "").toLowerCase();
     
-    // 🛠️ Penanganan khusus untuk ARRAY 'related'
+    // Penanganan khusus untuk ARRAY 'related'
     // Kita gabungkan array-nya pakai .join(" ") agar jadi satu teks panjang
     const relatedArray = Array.isArray(item.related) ? item.related : [];
     const relatedString = relatedArray.join(" ").toLowerCase(); 
@@ -29,14 +29,14 @@ export default function Kamus() {
       arti.includes(keyword) ||
       contoh.includes(keyword) ||
       kategori.includes(keyword) ||
-      relatedString.includes(keyword) // Cari di dalam array yang sudah jadi teks
+      relatedString.includes(keyword) 
     );
   });
 
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-8 py-6">
       
-      {/* 🌸 HEADER CUTE & MANIS */}
+      {/*  HEADER */}
       <div className="bg-emerald-600 text-white rounded-3xl p-8 md:p-10 mb-10 text-center shadow-lg bg-gradient-to-br from-emerald-500 to-emerald-700 dark:from-slate-800 dark:to-slate-900 border dark:border-slate-700 relative overflow-hidden">
         
         {/* Dekorasi Awan & Bintang Transparan */}
