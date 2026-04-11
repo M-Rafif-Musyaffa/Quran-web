@@ -195,7 +195,7 @@ export default function Tasbih() {
         </div>
       </div>
 
-      {/* 💎 KARTU UTAMA TASBIH */}
+      {/*  KARTU UTAMA TASBIH */}
       <div className="bg-white dark:bg-slate-800 rounded-[2.5rem] p-6 sm:p-8 md:p-14 shadow-sm border border-slate-100 dark:border-slate-700 max-w-2xl mx-auto relative overflow-hidden flex flex-col items-center">
 
         <div className={`absolute -top-28 -left-28 w-[340px] h-[340px] rounded-full blur-[80px] opacity-40 ${theme.bgOrb} pointer-events-none`}></div>
@@ -224,7 +224,7 @@ export default function Tasbih() {
               })}
             </div>
 
-            {/* Tulisan Arab (PERBAIKAN OFFSIDE DI SINI!) */}
+            {/* Tulisan Arab */}
             <div className={`text-center mb-10 transition-colors duration-500 ${theme.text}`}>
               <div className="bg-slate-50 dark:bg-slate-900/50 px-6 sm:px-10 py-6 sm:py-8 rounded-3xl border border-slate-100 dark:border-slate-700 shadow-inner inline-flex items-center justify-center min-w-[280px] max-w-full">
                 <h2 
