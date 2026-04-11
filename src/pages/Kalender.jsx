@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
-// IMPOR GUDANG DATA
 import useQuranStore from '../store/useQuranStore';
 
 const namaBulanIndo = [
@@ -36,10 +35,10 @@ export default function Kalender() {
   const [tahun, setTahun] = useState(hariIni.getFullYear());
   const [modeTampilan, setModeTampilan] = useState('kotak');
   
-  // STATE BARU UNTUK MODAL (POP-UP) PENCATATAN
+  // STATE UNTUK MODAL (POP-UP) PENCATATAN
   const { catatanKalender, tambahCatatan, hapusCatatan } = useQuranStore();
   const [modalTerbuka, setModalTerbuka] = useState(false);
-  const [tanggalPilih, setTanggalPilih] = useState(null); // Menyimpan tanggal yang sedang diklik ("DD-MM-YYYY")
+  const [tanggalPilih, setTanggalPilih] = useState(null); 
   const [formTipe, setFormTipe] = useState('haid');
   const [formTeks, setFormTeks] = useState('');
 
@@ -69,8 +68,6 @@ export default function Kalender() {
   const klikTanggal = (hariObj) => {
     const tglKey = hariObj.gregorian.date; // Format: "DD-MM-YYYY"
     setTanggalPilih(hariObj);
-    
-    // Kalau sudah ada catatannya, isi formnya dengan data yang sudah ada
     if (catatanKalender[tglKey]) {
       setFormTipe(catatanKalender[tglKey].tipe);
       setFormTeks(catatanKalender[tglKey].teks);
@@ -175,7 +172,7 @@ export default function Kalender() {
                     return (
                       <div 
                         key={idx} 
-                        onClick={() => klikTanggal(hari)} // Buka modal saat diklik
+                        onClick={() => klikTanggal(hari)}
                         className={`relative rounded-2xl p-2 md:p-3 min-h-[80px] md:min-h-[100px] flex flex-col justify-between border transition duration-300 group cursor-pointer hover:scale-105 active:scale-95
                           ${catatan?.tipe === 'haid' ? 'bg-rose-50 border-rose-200 dark:bg-rose-900/20 dark:border-rose-800' 
                           : catatan?.tipe === 'puasa' ? 'bg-blue-50 border-blue-200 dark:bg-blue-900/20 dark:border-blue-800'
@@ -272,9 +269,7 @@ export default function Kalender() {
         </div>
       )}
 
-      {/* ============================================================== */}
       {/* POP-UP (MODAL) PENGISIAN CATATAN (Muncul kalau modalTerbuka = true) */}
-      {/* ============================================================== */}
       {modalTerbuka && tanggalPilih && (
         <div className="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-[100] flex items-center justify-center p-4 animate-fade-in">
           <div className="bg-white dark:bg-slate-800 rounded-3xl p-6 md:p-8 w-full max-w-md shadow-2xl transform scale-100 border border-slate-100 dark:border-slate-700">
