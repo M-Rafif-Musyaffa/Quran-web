@@ -5,11 +5,11 @@ export default function Khatam() {
   const [targetHari, setTargetHari] = useState(30);
   const [hasil, setHasil] = useState(null);
   
-  // 🚀 STATE BARU UNTUK TRACKER
+  // STATE BARU UNTUK TRACKER
   const [isTracking, setIsTracking] = useState(false);
   const [progressData, setProgressData] = useState([]);
 
-  // 🧮 LOGIKA PERHITUNGAN KHATAM
+  // LOGIKA PERHITUNGAN KHATAM
   const hitungTarget = (hari) => {
     const totalHalaman = 604;
     const totalJuz = 30;
@@ -31,7 +31,7 @@ export default function Khatam() {
     });
   };
 
-  // 💾 MENGAMBIL DATA DARI MEMORI HP SAAT DIBUKA
+  // MENGAMBIL DATA DARI MEMORI HP SAAT DIBUKA
   useEffect(() => {
     const memoriTarget = localStorage.getItem('khatamTarget');
     const memoriProgress = localStorage.getItem('khatamProgress');
@@ -43,30 +43,29 @@ export default function Khatam() {
       setIsTracking(true);
       hitungTarget(hari);
     } else {
-      hitungTarget(30); // Default jika belum ada program
+      hitungTarget(30);
     }
   }, []);
 
-  // 🏁 MEMULAI PROGRAM BARU
   const mulaiProgram = () => {
     localStorage.setItem('khatamTarget', targetHari);
-    const progressAwal = Array(targetHari).fill(false); // Membuat deretan 'false' sebanyak target hari
+    const progressAwal = Array(targetHari).fill(false); 
     localStorage.setItem('khatamProgress', JSON.stringify(progressAwal));
     
     setProgressData(progressAwal);
     setIsTracking(true);
   };
 
-  // ✅ MENCEKLIS HARI
+  // MENCEKLIS HARI
   const toggleHari = (index) => {
     const progressBaru = [...progressData];
-    progressBaru[index] = !progressBaru[index]; // Ubah dari false ke true (atau sebaliknya)
+    progressBaru[index] = !progressBaru[index];
     
     setProgressData(progressBaru);
-    localStorage.setItem('khatamProgress', JSON.stringify(progressBaru)); // Simpan ke memori
+    localStorage.setItem('khatamProgress', JSON.stringify(progressBaru));
   };
 
-  // 🔄 MENGULANG/MENGHAPUS PROGRAM
+  // MENGULANG/MENGHAPUS PROGRAM
   const resetProgram = () => {
     if (window.confirm('Yakin ingin mereset targetmu? Semua progres ceklis akan hilang lho. 🥺')) {
       localStorage.removeItem('khatamTarget');
@@ -84,7 +83,7 @@ export default function Khatam() {
   return (
     <div className="max-w-5xl mx-auto py-4 animate-fade-in">
       
-      {/* 🌸 HEADER */}
+      {/* HEADER */}
       <div className={`text-white rounded-[2rem] p-8 md:p-12 mb-8 text-center shadow-lg transition-colors duration-700 relative overflow-hidden ${isTracking ? 'bg-gradient-to-br from-sky-500 to-indigo-700 dark:from-slate-800 dark:to-slate-900' : 'bg-gradient-to-br from-emerald-500 to-teal-700 dark:from-slate-800 dark:to-slate-900'}`}>
         <div className="absolute top-4 right-10 opacity-20 text-6xl md:text-7xl animate-pulse">🎯</div>
         <div className="absolute bottom-4 left-6 opacity-20 text-5xl animate-bounce" style={{ animationDuration: '3s' }}>📖</div>
@@ -102,9 +101,7 @@ export default function Khatam() {
         </div>
       </div>
 
-      {/* ======================================================== */}
-      {/* 🖥️ MODE 1: SETUP TARGET (Muncul jika belum mulai)        */}
-      {/* ======================================================== */}
+      {/* MODE 1: SETUP TARGET (Muncul jika belum mulai)        */}
       {!isTracking && (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           <div className="md:col-span-1 bg-white dark:bg-slate-800 rounded-[2rem] p-8 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col justify-center items-center text-center">
@@ -160,10 +157,7 @@ export default function Khatam() {
           </div>
         </div>
       )}
-
-      {/* ======================================================== */}
-      {/* 🚀 MODE 2: TRACKER DASHBOARD (Muncul saat program jalan) */}
-      {/* ======================================================== */}
+      {/* MODE 2: TRACKER DASHBOARD (Muncul saat program jalan) */}
       {isTracking && hasil && (
         <div className="animate-fade-in pb-10">
           
