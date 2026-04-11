@@ -1,18 +1,15 @@
-import { useState, useEffect } from 'react'; // Tambahkan useEffect
+import { useState, useEffect } from 'react'; 
 import { Outlet } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import QuotePopup from './QuotePopup';
 import GlobalPlayer from './GlobalPlayer';
-import useQuranStore from '../store/useQuranStore'; // Impor Gudang Data
+import useQuranStore from '../store/useQuranStore'; 
 
 export default function Layout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   
   // Ambil status tema saat ini dari Gudang Data
   const { theme } = useQuranStore();
-
-  // 🌙 MANTRA AJAIB UNTUK DARK MODE
-  // Efek ini akan memantau: setiap kali 'theme' berubah, ia akan mengubah warna website!
   useEffect(() => {
     if (theme === 'dark') {
       document.documentElement.classList.add('dark');
