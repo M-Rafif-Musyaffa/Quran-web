@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
-// 📂 IMPORT DATA LOKAL KITA
 import { dataDzikir } from '../data/dataDzikir';
 import { dataDoaHarian } from '../data/dataDoa'; 
 
@@ -20,7 +18,7 @@ export default function Doa() {
     // 1. Cek Judul dan Arti
     const cocokStandar = judul.includes(pencarian) || arti.includes(pencarian);
 
-    // 2. Cek Tags Tersembunyi (Gunakan ? untuk berjaga-jaga jika tags kosong)
+    // 2. Cek Tags Tersembunyi
     const cocokTags = doa.tags?.some(tag => tag.toLowerCase().includes(pencarian)) || false;
 
     return cocokStandar || cocokTags;
@@ -29,7 +27,7 @@ export default function Doa() {
   return (
     <div className="max-w-5xl mx-auto py-4">
       
-      {/* HEADER ELEGAN */}
+      {/* HEADER */}
       <div className="bg-emerald-600 text-white rounded-[2rem] p-8 md:p-12 mb-8 text-center shadow-lg bg-gradient-to-br from-emerald-500 to-teal-700 dark:from-slate-800 dark:to-slate-900 border dark:border-slate-700 relative overflow-hidden">
         <div className="absolute top-4 left-6 opacity-20 text-6xl md:text-7xl animate-pulse">☁️</div>
         
@@ -42,7 +40,7 @@ export default function Doa() {
         </div>
       </div>
 
-      {/* TOMBOL SAKLAR (TABS) */}
+      {/* TOMBOL TABS */}
       <div className="flex justify-center mb-10">
         <div className="bg-slate-200/50 dark:bg-slate-800 p-1.5 rounded-2xl flex flex-wrap gap-2 shadow-inner border border-slate-100 dark:border-slate-700">
           <button
@@ -68,9 +66,7 @@ export default function Doa() {
         </div>
       </div>
 
-      {/* ========================================= */}
-      {/* 📚 KONTEN TAB 1: DAFTAR DOA HARIAN        */}
-      {/* ========================================= */}
+      {/*  KONTEN TAB 1: DAFTAR DOA HARIAN        */}
       {tabAktif === 'doa' && (
         <div className="animate-fade-in">
           
@@ -117,9 +113,7 @@ export default function Doa() {
         </div>
       )}
 
-      {/* ========================================= */}
-      {/* 📿 KONTEN TAB 2: DZIKIR (Tetap Tampil Penuh) */}
-      {/* ========================================= */}
+      {/* KONTEN TAB 2: DZIKIR */}
       {tabAktif === 'dzikir' && (
         <div className="animate-fade-in space-y-6">
           {dataDzikir.map((dzikir) => (
