@@ -1,6 +1,6 @@
 export default function SurahCardSkeleton() {
   return (
-    // animate-pulse adalah class sakti Tailwind untuk membuat efek kedap-kedip halus (napas)
+    // animate-pulse adalah class sakti Tailwind untuk membuat efek kedap-kedip halus
     <div className="bg-white rounded-xl p-4 shadow-sm border border-slate-100 flex items-center justify-between animate-pulse">
       
       {/* Bagian Kiri: Lingkaran dan Baris Teks Kosong */}
