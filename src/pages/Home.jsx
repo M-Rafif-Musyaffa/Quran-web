@@ -10,10 +10,10 @@ export default function Home() {
   // State untuk Notifikasi Kalender
   const [notifAgenda, setNotifAgenda] = useState(null);
   
-  // 🚀 STATE BARU: Untuk Data Widget Khatam
+  // STATE Untuk Data Widget Khatam
   const [khatamData, setKhatamData] = useState({ target: null, progress: [] });
 
-  // 🔔 LOGIKA PENDETEKSI TANGGAL & DATA KHATAM
+  // LOGIKA PENDETEKSI TANGGAL & DATA KHATAM
   useEffect(() => {
     // --- 1. Logika Notifikasi Kalender ---
     const dateObj = new Date();
@@ -23,8 +23,6 @@ export default function Home() {
     const tglHariIni = `${dd}-${mm}-${yyyy}`;
 
     const agendaHariIni = catatanKalender[tglHariIni];
-    // const sudahDinotif = sessionStorage.getItem('notifAgendaHariIni');
-
     if (agendaHariIni) {
       setNotifAgenda(agendaHariIni);
     }
@@ -48,11 +46,11 @@ export default function Home() {
     setNotifAgenda(null);
   };
 
-  // 🧮 MENGHITUNG PERSENTASE KHATAM UNTUK WIDGET
+  // MENGHITUNG PERSENTASE KHATAM UNTUK WIDGET
   const hariSelesai = khatamData.progress.filter(status => status === true).length;
   const persentaseKhatam = khatamData.target ? Math.round((hariSelesai / khatamData.target) * 100) : 0;
 
-  // 🌸 LOGIKA WAKTU & SAPAAN
+  // LOGIKA WAKTU & SAPAAN
   const jam = new Date().getHours();
   let sapaan = 'Selamat Pagi 🌸';
   let pesan = 'Awali harimu dengan senyuman dan Bismillah! ✨';
@@ -66,7 +64,7 @@ export default function Home() {
     sapaan = 'Selamat Malam 🌙✨'; pesan = 'Selamat beristirahat, jangan lupa doa sebelum tidur ya! ☁️💤';
   }
 
-  // 🫂 LOGIKA COMFORT MODE
+  // LOGIKA COMFORT MODE
   if (moodHariIni === 'sedih') {
     sapaan = 'Pelukan Hangat Untukmu 🫂'; pesan = 'Tarik napas pelan-pelan. Tidak apa-apa merasa lelah hari ini. Allah selalu bersamamu. ☁️🤍'; bgWarna = 'from-slate-500 to-slate-700';
   } else if (moodHariIni === 'sakit') {
@@ -79,10 +77,7 @@ export default function Home() {
 
   return (
     <div className="max-w-5xl mx-auto relative">
-
-      {/* ========================================================= */}
-      {/* 🔔 POP-UP NOTIFIKASI KALENDER                           */}
-      {/* ========================================================= */}
+      {/* POP-UP NOTIFIKASI KALENDER                           */}
       {notifAgenda && (
         <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[100] flex items-center justify-center p-4 animate-fade-in">
           <div className="bg-white dark:bg-slate-800 rounded-[2rem] p-8 max-w-sm w-full text-center shadow-2xl border border-slate-100 dark:border-slate-700">
@@ -112,7 +107,7 @@ export default function Home() {
         </div>
       )}
 
-      {/* 🌸 HEADER SAPAAN MANIS */}
+      {/* HEADER SAPAAN MANIS */}
       <div className={`text-white rounded-3xl p-8 md:p-10 mb-8 shadow-lg bg-gradient-to-br ${bgWarna} dark:from-slate-800 dark:to-slate-900 border dark:border-slate-700 relative overflow-hidden transition-colors duration-1000`}>
         
         <div className="absolute top-2 right-6 opacity-20 text-7xl select-none animate-pulse">☁️</div>
@@ -136,9 +131,7 @@ export default function Home() {
       <JadwalSholat />
       <RandomDoa />
 
-      {/* ========================================================= */}
-      {/* 🎯 WIDGET: PROGRES KHATAM AL-QURAN                        */}
-      {/* ========================================================= */}
+      {/* WIDGET: PROGRES KHATAM AL-QURAN                        */}
       {khatamData.target ? (
         <div className="bg-white dark:bg-slate-800 rounded-[2rem] p-6 md:p-8 shadow-sm border border-slate-100 dark:border-slate-700 mb-6 flex flex-col md:flex-row items-center justify-between gap-6 group hover:border-sky-300 dark:hover:border-sky-700 transition-colors relative overflow-hidden">
           <div className="absolute -right-4 -bottom-4 text-8xl opacity-5 group-hover:scale-110 transition-transform duration-500">📖</div>
@@ -182,9 +175,7 @@ export default function Home() {
         </div>
       )}
 
-      {/* ========================================================= */}
-      {/* 🔖 KOTAK AL-QURAN: TERAKHIR DIBACA & DAFTAR SURAH         */}
-      {/* ========================================================= */}
+      {/* KOTAK AL-QURAN: TERAKHIR DIBACA & DAFTAR SURAH         */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
         
         {/* KOTAK 1: Banner Terakhir Dibaca */}
