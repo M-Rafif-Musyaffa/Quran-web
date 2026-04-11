@@ -67,7 +67,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
             <NavLink
               key={item.name}
               to={item.path}
-              onClick={toggleSidebar} // Otomatis tutup menu di HP setelah diklik
+              onClick={toggleSidebar}
               className={({ isActive }) => `
                 flex items-center gap-3.5 px-4 py-3.5 rounded-2xl font-medium transition-all duration-300 group
                 ${isActive 
@@ -106,8 +106,6 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
               </span>
               <span>{theme === 'light' ? 'Mode Gelap' : 'Mode Terang'}</span>
             </div>
-            
-            {/* Saklar Mini Lucu */}
             <div className={`w-10 h-6 rounded-full p-1 transition-colors duration-300 ${theme === 'dark' ? 'bg-emerald-500' : 'bg-slate-300'}`}>
               <div className={`w-4 h-4 bg-white rounded-full shadow-sm transition-transform duration-300 ${theme === 'dark' ? 'translate-x-4' : 'translate-x-0'}`}></div>
             </div>
