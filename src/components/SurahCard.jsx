@@ -4,7 +4,6 @@ export default function SurahCard({ surah }) {
   return (
     <Link 
       to={`/surah/${surah.nomor}`} 
-      // PERUBAHAN: Menambahkan border-slate-200, shadow-sm, hover:-translate-y-1 agar kartu melayang saat disentuh
       className="bg-white dark:bg-slate-800 rounded-2xl p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border border-slate-200 dark:border-slate-700 flex items-center justify-between group relative overflow-hidden"
     >
       {/* Efek Animasi Baru: Garis hijau di sebelah kiri yang muncul saat di-hover */}
