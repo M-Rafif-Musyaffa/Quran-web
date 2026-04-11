@@ -9,7 +9,7 @@ const useQuranStore = create(
       theme: 'light',
       toggleTheme: () => set((state) => ({ theme: state.theme === 'light' ? 'dark' : 'light' })),
       
-      // 2. FITUR BOOKMARK (Ini yang tadi terhapus!)
+      // 2. FITUR BOOKMARK
       bookmark: null,
       setBookmark: (surahId, namaSurah, nomorAyat) => 
         set({ bookmark: { surahId, namaSurah, nomorAyat } }),
@@ -35,10 +35,10 @@ const useQuranStore = create(
       })),
       hapusCatatan: (tanggal) => set((state) => {
         const jadwalBaru = { ...state.catatanKalender };
-        delete jadwalBaru[tanggal]; // Hapus data di tanggal tersebut
+        delete jadwalBaru[tanggal]; 
         return { catatanKalender: jadwalBaru };
       }),
-      moodHariIni: null, // Pilihan: 'baik', 'sedih', 'sakit', 'haid', atau null
+      moodHariIni: null,
       setMoodHariIni: (mood) => set({ moodHariIni: mood }),
     }),
     {
