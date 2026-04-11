@@ -3,7 +3,7 @@ import { useState } from 'react';
 export default function Tajwid() {
   const [kategoriAktif, setKategoriAktif] = useState('nunMati');
 
-  // 📚 DATABASE MATERI TAJWID (Sekarang dilengkapi Penjelasan!)
+  // DATABASE MATERI TAJWID (Sekarang dilengkapi Penjelasan!)
   const materiTajwid = {
     nunMati: {
       judul: "Hukum Nun Mati (نْ) & Tanwin (ـً ـٍ ـٌ)",
@@ -97,7 +97,7 @@ export default function Tajwid() {
   return (
     <div className="max-w-5xl mx-auto py-4">
       
-      {/* 🌸 HEADER */}
+      {/* HEADER */}
       <div className="bg-emerald-600 text-white rounded-[2rem] p-8 md:p-10 mb-8 text-center shadow-lg bg-gradient-to-br from-emerald-500 to-teal-700 dark:from-slate-800 dark:to-slate-900 border dark:border-slate-700 relative overflow-hidden">
         <div className="absolute top-2 right-6 opacity-20 text-6xl md:text-7xl animate-pulse">☁️</div>
         <div className="absolute bottom-4 left-10 opacity-20 text-5xl animate-bounce" style={{ animationDuration: '3s' }}>📖</div>
@@ -134,7 +134,7 @@ export default function Tajwid() {
         </div>
       </div>
 
-      {/* 📚 KONTEN MATERI AKTIF */}
+      {/* KONTEN MATERI AKTIF */}
       <div className="bg-white dark:bg-slate-800 rounded-[2rem] p-6 sm:p-8 md:p-10 shadow-sm border border-slate-100 dark:border-slate-700 mb-10 animate-fade-in">
         
         <div className="text-center mb-10">
