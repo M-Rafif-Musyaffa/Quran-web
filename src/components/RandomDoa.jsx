@@ -6,8 +6,7 @@ export default function RandomDoa() {
   // State untuk menyimpan 1 doa acak yang sedang ditampilkan
   const [doaAcak, setDoaAcak] = useState(null);
 
-  // Mengambil seluruh data doa (Karena Asisten Pintar/React Query sudah menyimpannya
-  // di cache dari halaman Doa, proses ini akan instan dan tidak membebani server!)
+  // Mengambil seluruh data doa
   const { data: doadoa, isLoading, isError } = useQuery({
     queryKey: ['doadoa'],
     queryFn: async () => {
@@ -38,7 +37,7 @@ export default function RandomDoa() {
     return <div className="animate-pulse bg-emerald-100 dark:bg-slate-800 h-40 rounded-3xl mb-8"></div>;
   }
 
-  // Kalau error atau doaAcak belum siap, jangan tampilkan apa-apa (biar halaman Home tetap bersih)
+  // Kalau error atau doaAcak belum siap, jangan tampilkan apa-apa
   if (isError || !doaAcak) return null;
 
   // Merapikan nama variabel dari server
@@ -49,10 +48,7 @@ export default function RandomDoa() {
   const teksTentang = doaAcak.tentang || doaAcak.keterangan || "Keterangan riwayat tidak tersedia untuk doa ini.";
 
   return (
-    // Banner doa acak ini memakai gradasi hijau yang cantik
     <div className="bg-gradient-to-br from-emerald-600 to-emerald-800 dark:from-slate-800 dark:to-slate-900 rounded-3xl p-6 md:p-8 mb-8 text-white shadow-lg relative overflow-hidden group border dark:border-slate-700">
-      
-      {/* Dekorasi Ikon Tangan Berdoa transparan di latar belakang */}
       <div className="absolute top-0 right-0 opacity-10 text-9xl -mt-6 -mr-6 transform rotate-12 select-none">
         🤲
       </div>
