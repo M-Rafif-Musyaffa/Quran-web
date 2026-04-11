@@ -44,7 +44,7 @@ export default function QuotePopup() {
     const acak = Math.floor(Math.random() * kumpulanPilihan.length);
     setQuote(kumpulanPilihan[acak]);
 
-    // 2. Tunda kemunculannya (agar tidak kaget)
+    // 2. Tunda kemunculannya
     const timerMuncul = setTimeout(() => {
       setTampil(true);
     }, 2500);
@@ -58,11 +58,9 @@ export default function QuotePopup() {
       clearTimeout(timerMuncul);
       clearTimeout(timerHilang);
     };
-  }, [moodHariIni]); // Efek ini akan diulang kalau mood-nya berubah!
+  }, [moodHariIni]);
 
   if (!quote) return null;
-
-  // Sesuaikan ikon dan warna pop-up dengan mood
   let ikon = '💌';
   let warnaTeks = 'text-emerald-500';
   if (moodHariIni === 'sedih') { ikon = '🫂'; warnaTeks = 'text-slate-500'; }
