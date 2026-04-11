@@ -2,11 +2,9 @@ import { Link } from 'react-router-dom';
 import useQuranStore from '../store/useQuranStore';
 
 export default function Navbar() {
-  // Mengambil state tema dan fungsi tombol saklar dari Papan Tulis
   const { theme, toggleTheme } = useQuranStore();
 
   return (
-    // dark:bg-slate-800 artinya "Kalau mode gelap aktif, ubah warna hijau ini jadi abu-abu gelap"
     <header className="bg-emerald-600 dark:bg-slate-900 text-white shadow-md sticky top-0 z-50 transition-colors duration-300">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold tracking-wider">
